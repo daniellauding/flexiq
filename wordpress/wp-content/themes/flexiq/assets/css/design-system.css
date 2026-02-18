@@ -11,7 +11,8 @@
   --color-nav-dark: #171717;
   --color-accent: #5fdf81;
   --color-accent-light: #b0eaa9;
-  --color-button: #193ec6;
+  --color-button: #5fdf81;
+  --color-button-text: #0c2212;
   --color-hero-bg: #f8f6ea;
   --color-section-bg: #f6fcff;
   --color-muted: #2c2c2c;
@@ -232,11 +233,11 @@
   opacity: 0.88 !important;
 }
 
-/* Primary button (blå) */
+/* Primary button (grön — Figma accent) */
 .wp-block-button.is-style-fill .wp-block-button__link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link {
   background-color: var(--color-button) !important;
-  color: var(--color-white) !important;
+  color: var(--color-button-text, #0c2212) !important;
 }
 
 /* Outline button */
