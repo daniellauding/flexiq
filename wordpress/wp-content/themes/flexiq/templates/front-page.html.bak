@@ -4,8 +4,8 @@
 <main class="wp-block-group">
 
 <!-- HERO: cream bg, label ovan, stor H1, ingress, 2 pill-knappar -->
-<!-- wp:group {"align":"full","className":"hero-section","style":{"color":{"background":"#ebf4ff"},"spacing":{"padding":{"top":"96px","bottom":"80px","left":"2rem","right":"2rem"}}}} -->
-<div class="wp-block-group alignfull hero-section has-background" style="background-color:#ebf4ff;padding-top:96px;padding-bottom:80px;padding-left:2rem;padding-right:2rem;">
+<!-- wp:group {"align":"full","className":"hero-section","style":{"color":{"background":"#f8f6ea"},"spacing":{"padding":{"top":"96px","bottom":"80px","left":"2rem","right":"2rem"}}}} -->
+<div class="wp-block-group alignfull hero-section has-background" style="background-color:#f8f6ea;padding-top:96px;padding-bottom:80px;padding-left:2rem;padding-right:2rem;">
 <!-- wp:group {"layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group">
 
@@ -27,8 +27,8 @@
 <!-- Pill-knappar -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"1rem"}}} -->
 <div class="wp-block-buttons">
-<!-- wp:button {"style":{"color":{"background":"#5fdf81","text":"#0c2212"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#5fdf81;color:#0c2212;border-radius:9999px;padding:14px 28px;">Kontakta oss</a></div>
+<!-- wp:button {"style":{"color":{"background":"#193ec6","text":"#ffffff"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#193ec6;color:#ffffff;border-radius:9999px;padding:14px 28px;">Kontakta oss</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline","style":{"color":{"text":"#0c2212"},"border":{"radius":"9999px","color":"#0c2212","width":"2px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color wp-element-button" style="color:#0c2212;border-radius:9999px;border:2px solid #0c2212;padding:14px 28px;background:transparent;">För företag</a></div>
@@ -222,17 +222,17 @@
 </div><!-- /wp:group -->
 </div><!-- /wp:group -->
 
-<!-- GÖR ETT MOVE: mörk #0c2212 bg (Figma dark section), vit text, 2 vita kort -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#0c2212"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"2rem","right":"2rem"}}}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#0c2212;padding-top:80px;padding-bottom:80px;padding-left:2rem;padding-right:2rem;">
+<!-- GÖR ETT MOVE: #f6fcff bg, 48px rubrik, 2 kort (pill-knappar), EXAKT text från Figma -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#f6fcff"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"2rem","right":"2rem"}}}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#f6fcff;padding-top:80px;padding-bottom:80px;padding-left:2rem;padding-right:2rem;">
 <!-- wp:group {"layout":{"type":"constrained","contentSize":"1100px"}} -->
 <div class="wp-block-group">
 
-<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"48px","fontWeight":"700","lineHeight":"1.0"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-<h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#ffffff;font-size:48px;font-weight:700;line-height:1.0;margin-bottom:1rem;">Gör ett move</h2>
+<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"48px","fontWeight":"700","lineHeight":"1.0"},"color":{"text":"#000000"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#000000;font-size:48px;font-weight:700;line-height:1.0;margin-bottom:1rem;">Gör ett move</h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"24px","fontWeight":"500"},"color":{"text":"#b0eaa9"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-<p class="has-text-align-center has-text-color" style="color:#b0eaa9;font-size:24px;font-weight:500;margin-bottom:3rem;">Vi finns här för att göra kompetensförsörjning enklare. Kontakta oss idag – utan förpliktelser.</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"24px","fontWeight":"500"},"color":{"text":"#000000"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
+<p class="has-text-align-center has-text-color" style="color:#000000;font-size:24px;font-weight:500;margin-bottom:3rem;">Vi finns här för att göra kompetensförsörjning enklare. Kontakta oss idag – utan förpliktelser.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":"24px"}}} -->
@@ -247,8 +247,8 @@
 <!-- wp:paragraph {"style":{"color":{"text":"#000000"},"typography":{"fontSize":"16px","lineHeight":"1.6"},"spacing":{"margin":{"bottom":"2rem"}}}} --><p class="has-text-color" style="color:#000000;font-size:16px;line-height:1.6;margin-bottom:2rem;">Söker du uppdrag eller nya möjligheter? Vi hjälper konsulter att hitta rätt uppdrag och ta nästa steg i karriären.</p><!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons">
-<!-- wp:button {"style":{"color":{"background":"#5fdf81","text":"#0c2212"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#5fdf81;color:#0c2212;border-radius:9999px;padding:14px 28px;">Visa mer</a></div>
+<!-- wp:button {"style":{"color":{"background":"#193ec6","text":"#ffffff"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#193ec6;color:#ffffff;border-radius:9999px;padding:14px 28px;">Visa mer</a></div>
 <!-- /wp:button -->
 </div><!-- /wp:buttons -->
 </div><!-- /wp:group -->
@@ -263,8 +263,8 @@
 <!-- wp:paragraph {"style":{"color":{"text":"#000000"},"typography":{"fontSize":"16px","lineHeight":"1.6"},"spacing":{"margin":{"bottom":"2rem"}}}} --><p class="has-text-color" style="color:#000000;font-size:16px;line-height:1.6;margin-bottom:2rem;">Behöver ni konsulter eller rekrytering? Vi levererar rätt kompetens – snabbt, effektivt och utan omvägar.</p><!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons">
-<!-- wp:button {"style":{"color":{"background":"#5fdf81","text":"#0c2212"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#5fdf81;color:#0c2212;border-radius:9999px;padding:14px 28px;">Visa mer</a></div>
+<!-- wp:button {"style":{"color":{"background":"#193ec6","text":"#ffffff"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#193ec6;color:#ffffff;border-radius:9999px;padding:14px 28px;">Visa mer</a></div>
 <!-- /wp:button -->
 </div><!-- /wp:buttons -->
 </div><!-- /wp:group -->
@@ -382,8 +382,8 @@
 <!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"radius":"8px","color":"#d4d4d4","width":"1px"},"spacing":{"padding":{"top":"12px","right":"16px","bottom":"12px","left":"16px"},"margin":{"bottom":"16px"}}}} --><div class="wp-block-group has-background" style="background-color:#fafafa;border-radius:8px;border:1px solid #d4d4d4;padding:12px 16px;margin-bottom:16px;"><!-- wp:paragraph {"style":{"color":{"text":"#737373"},"typography":{"fontSize":"14px"}}} --><p class="has-text-color" style="color:#737373;font-size:14px;"> </p><!-- /wp:paragraph --></div><!-- /wp:group -->
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"1.5rem"}}}} -->
 <div class="wp-block-buttons" style="margin-top:1.5rem;">
-<!-- wp:button {"width":100,"style":{"color":{"background":"#5fdf81","text":"#0c2212"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#5fdf81;color:#0c2212;border-radius:9999px;padding:14px 28px;text-align:center;display:block;">Skicka</a></div>
+<!-- wp:button {"width":100,"style":{"color":{"background":"#193ec6","text":"#ffffff"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-text-color has-background wp-element-button" style="background-color:#193ec6;color:#ffffff;border-radius:9999px;padding:14px 28px;text-align:center;display:block;">Skicka</a></div>
 <!-- /wp:button -->
 </div><!-- /wp:buttons -->
 </div><!-- /wp:group -->
