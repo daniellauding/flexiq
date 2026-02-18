@@ -76,6 +76,14 @@
   --color-brown: #381d11;
 
   /* ===================================================================
+     COLORS - SECTION BACKGROUNDS (from Figma audit)
+     =================================================================== */
+  --color-section-blue: #f6fcff;    /* Figma: Våra kompetenser-sektion */
+  --color-section-green: #f3fbf5;   /* Figma: Gör ett move-sektion */
+  --color-hero-cream: #f8f6ea;      /* Figma: Hero bakgrund */
+  --color-text-muted: #2c2c2c;      /* Figma: Muted body text */
+
+  /* ===================================================================
      TYPOGRAPHY - FONT FAMILIES
      =================================================================== */
   
@@ -315,3 +323,65 @@
 .shadow-lg { box-shadow: var(--shadow-lg); }
 
 .transition { transition: var(--transition-base); }
+
+/* ============================================
+   P0 FIGMA FIXES — Added 2026-02-18
+   ============================================ */
+
+/* Missing section background colors (from Figma) */
+:root {
+  --color-section-blue: #f6fcff;
+  --color-section-green: #f3fbf5;
+  --color-hero-cream: #f8f6ea;
+  --color-text-muted: #2c2c2c;
+  --color-button-primary: #193ec6;
+}
+
+.bg-section-blue  { background-color: var(--color-section-blue); }
+.bg-section-green { background-color: var(--color-section-green); }
+.bg-hero-cream    { background-color: var(--color-hero-cream); }
+.text-muted       { color: var(--color-text-muted); }
+
+/* Hero H1 — Figma: 96px w900, implementation had 48px */
+.hero-section h1,
+.wp-block-cover h1,
+.hero h1,
+[class*="hero"] h1 {
+  font-size: clamp(48px, 8vw, 96px) !important;
+  font-weight: 900 !important;
+  line-height: 1.0 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Button primary — Figma contact form button: #193ec6 */
+.wp-block-button__link,
+.btn,
+.btn-primary {
+  background-color: var(--color-button-primary) !important;
+}
+
+/* Numbered features pattern */
+.numbered-features-section .wp-block-columns {
+  gap: 2rem;
+}
+.numbered-features-section .wp-block-group {
+  border-left: none;
+}
+
+/* Article cards */
+.article-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Dual CTA section cards */
+.dual-cta-section .wp-block-column {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s ease;
+}
+.dual-cta-section .wp-block-column:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}

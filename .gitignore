@@ -1,31 +1,16 @@
-# Dependencies
-node_modules/
-vendor/
+# WordPress core — deploy separately on server
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/wp-*.php
+wordpress/index.php
+wordpress/xmlrpc.php
+wordpress/license.txt
+wordpress/readme.html
+latest.tar.gz
+wordpress/latest.tar.gz
 
-# Build output
-build/
-dist/
-
-# Environment
-.env
-.env.local
-
-# WordPress
-*.log
-debug.log
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
+# Dev
 .DS_Store
-Thumbs.db
-
-# Uploads (keep in repo for development patterns only)
-uploads/
-
-# Cache
-.cache/
+node_modules/
+*.log
+.env
