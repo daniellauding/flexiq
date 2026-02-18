@@ -455,3 +455,11 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ===================================================================
+   GÖR ETT MOVE — card shadow (Figma)
+   =================================================================== */
+.gor-ett-move-card,
+.wp-block-group.is-layout-flow[style*="border-radius:20px"] {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important;
+}
