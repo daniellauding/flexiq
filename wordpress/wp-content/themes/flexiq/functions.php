@@ -162,3 +162,19 @@ function flexiq_form_success_script() {
     }
 }
 add_action( 'wp_footer', 'flexiq_form_success_script' );
+
+/**
+ * Output theme directory URI for use in templates
+ */
+function flexiq_theme_vars_script() {
+    echo '<script>window.flexiqThemeUri = ' . json_encode(get_template_directory_uri()) . ';</script>';
+    echo '<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var img = document.getElementById("hero-cityscape-img");
+        if (img && window.flexiqThemeUri) {
+            img.src = window.flexiqThemeUri + "/assets/images/stockholm-hero.jpg";
+        }
+    });
+    </script>';
+}
+add_action('wp_head', 'flexiq_theme_vars_script');
