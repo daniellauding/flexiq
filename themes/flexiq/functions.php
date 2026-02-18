@@ -105,3 +105,60 @@ function flexiq_theme_setup() {
     add_editor_style( 'assets/css/fonts.css' );
 }
 add_action( 'after_setup_theme', 'flexiq_theme_setup' );
+
+/**
+ * FlexIQ Contact Form Handler
+ */
+function flexiq_handle_contact_form() {
+    if ( ! isset( $_POST['flexiq_contact_submit'] ) ) {
+        return;
+    }
+
+    // Verify nonce
+    if ( ! wp_verify_nonce( $_POST['flexiq_nonce'] ?? '', 'flexiq_contact' ) ) {
+        return;
+    }
+
+    $arende    = sanitize_text_field( $_POST['arende'] ?? '' );
+    $fornamn   = sanitize_text_field( $_POST['fornamn'] ?? '' );
+    $efternamn = sanitize_text_field( $_POST['efternamn'] ?? '' );
+    $epost     = sanitize_email( $_POST['epost'] ?? '' );
+    $meddelande = sanitize_textarea_field( $_POST['meddelande'] ?? '' );
+
+    if ( empty( $fornamn ) || empty( $epost ) ) {
+        return;
+    }
+
+    $to      = get_option( 'admin_email' );
+    $subject = "Nytt meddelande från FlexIQ – $arende";
+    $body    = "Ärende: $arende\nNamn: $fornamn $efternamn\nE-post: $epost\n\nMeddelande:\n$meddelande";
+    $headers = [ "Reply-To: $epost" ];
+
+    wp_mail( $to, $subject, $body, $headers );
+
+    // Redirect back with success param
+    wp_redirect( add_query_arg( 'kontakt', 'skickat', wp_get_referer() ) );
+    exit;
+}
+add_action( 'template_redirect', 'flexiq_handle_contact_form' );
+
+/**
+ * Show success message after form submission
+ */
+function flexiq_form_success_script() {
+    if ( isset( $_GET['kontakt'] ) && $_GET['kontakt'] === 'skickat' ) {
+        echo '<script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var el = document.getElementById("flexiq-form-status");
+                if (el) {
+                    el.textContent = "Tack! Vi återkommer inom kort.";
+                    el.className = "flexiq-form-status success";
+                    el.style.display = "block";
+                    var form = document.querySelector(".flexiq-form");
+                    if (form) form.style.display = "none";
+                }
+            });
+        </script>';
+    }
+}
+add_action( 'wp_footer', 'flexiq_form_success_script' );

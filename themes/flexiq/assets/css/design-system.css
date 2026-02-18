@@ -331,3 +331,127 @@
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
+
+/* ===================================================================
+   FLEXIQ CONTACT FORM — Figma-exact styles
+   =================================================================== */
+
+.flexiq-form-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.flexiq-form-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 24px 0;
+  font-family: var(--font-family);
+}
+
+.flexiq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flexiq-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.flexiq-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.flexiq-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0a0a0a;
+  font-family: var(--font-family);
+}
+
+.flexiq-input {
+  background: #fafafa;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: var(--font-family);
+  color: #0a0a0a;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.flexiq-input:focus {
+  border-color: #5fdf81;
+  background: #ffffff;
+}
+
+.flexiq-input::placeholder {
+  color: #a3a3a3;
+}
+
+.flexiq-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23737373' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.flexiq-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.flexiq-btn-submit {
+  background: #5fdf81;
+  color: #0c2212;
+  border: none;
+  border-radius: 9999px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+  transition: opacity 0.15s ease;
+}
+
+.flexiq-btn-submit:hover {
+  opacity: 0.88;
+}
+
+.flexiq-form-status {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.flexiq-form-status.success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.flexiq-form-status.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+@media (max-width: 600px) {
+  .flexiq-row {
+    grid-template-columns: 1fr;
+  }
+}
