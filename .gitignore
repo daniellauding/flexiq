@@ -7,10 +7,9 @@ wordpress/xmlrpc.php
 wordpress/license.txt
 wordpress/readme.html
 latest.tar.gz
-wordpress/latest.tar.gz
 
-# Dev
+# Dev files
+*.log
 .DS_Store
 node_modules/
-*.log
 .env
