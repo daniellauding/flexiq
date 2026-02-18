@@ -1,0 +1,645 @@
+/**
+ * FlexIQ Design System Showcase Page
+ * Custom styles for the living design system documentation
+ * Version: 1.0
+ */
+
+/* ===================================================================
+   DESIGN SYSTEM PAGE LAYOUT
+   =================================================================== */
+
+.design-system-page {
+  font-family: var(--font-primary);
+  line-height: var(--leading-normal);
+}
+
+.design-system-page .alignwide {
+  max-width: var(--container-2xl);
+}
+
+/* ===================================================================
+   HERO SECTION
+   =================================================================== */
+
+.ds-hero {
+  text-align: center;
+  padding: var(--spacing-12) var(--spacing-6) !important;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0a1a0f 100%);
+}
+
+.ds-hero h1 {
+  font-weight: var(--font-black);
+  margin-bottom: var(--spacing-4);
+  color: var(--color-white);
+}
+
+.ds-hero p {
+  color: var(--color-white);
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ds-version {
+  margin-top: var(--spacing-3);
+  font-size: var(--text-sm) !important;
+  opacity: 0.7 !important;
+  font-family: monospace;
+}
+
+/* ===================================================================
+   TABLE OF CONTENTS
+   =================================================================== */
+
+.ds-toc {
+  background: var(--color-gray-50);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  margin: var(--spacing-8) auto;
+  max-width: var(--container-md);
+}
+
+.ds-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-4) 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-2);
+}
+
+.ds-toc-list li {
+  margin: 0;
+}
+
+.ds-toc-list a {
+  display: block;
+  padding: var(--spacing-2) var(--spacing-3);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-medium);
+  transition: all var(--transition-base);
+  border: 2px solid transparent;
+}
+
+.ds-toc-list a:hover {
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+  transform: translateX(4px);
+}
+
+.ds-toc-list a::before {
+  content: '→ ';
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.ds-toc-list a:hover::before {
+  opacity: 1;
+}
+
+/* ===================================================================
+   SECTIONS
+   =================================================================== */
+
+.ds-section {
+  padding: var(--spacing-12) var(--spacing-6);
+  max-width: var(--container-2xl);
+  margin: 0 auto;
+}
+
+.ds-section-title {
+  font-size: var(--text-7xl);
+  font-weight: var(--font-black);
+  margin-bottom: var(--spacing-3);
+  color: var(--color-primary);
+  position: relative;
+  padding-bottom: var(--spacing-2);
+}
+
+.ds-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+}
+
+.ds-intro {
+  font-size: var(--text-xl);
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-8);
+  max-width: 800px;
+}
+
+/* ===================================================================
+   SHOWCASE BOXES
+   =================================================================== */
+
+.ds-showcase-box {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+  border: 1px solid var(--color-gray-150);
+  box-shadow: var(--shadow-md);
+}
+
+.ds-showcase-box h3 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--spacing-4);
+  color: var(--color-gray-800);
+}
+
+/* ===================================================================
+   TYPOGRAPHY DEMOS
+   =================================================================== */
+
+.ds-font-sample {
+  font-size: var(--text-2xl);
+  margin: var(--spacing-3) 0;
+  padding: var(--spacing-3);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-accent);
+}
+
+.satoshi-regular {
+  font-weight: var(--font-regular);
+}
+
+.satoshi-medium {
+  font-weight: var(--font-medium);
+}
+
+.satoshi-bold {
+  font-weight: var(--font-bold);
+}
+
+.satoshi-black {
+  font-weight: var(--font-black);
+}
+
+.ds-example {
+  margin: var(--spacing-2) 0;
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.ds-text-lg {
+  font-size: var(--text-body-lg);
+  font-weight: var(--font-bold);
+}
+
+.ds-text-base {
+  font-size: var(--text-body);
+  font-weight: var(--font-medium);
+}
+
+.ds-text-sm {
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-gray-400);
+}
+
+/* ===================================================================
+   COLOR SWATCHES
+   =================================================================== */
+
+.ds-color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-4);
+  margin: var(--spacing-4) 0;
+}
+
+.ds-color-swatch {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-gray-150);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.ds-color-swatch:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ds-color-preview {
+  width: 100%;
+  height: 120px;
+  transition: height var(--transition-base);
+}
+
+.ds-color-swatch:hover .ds-color-preview {
+  height: 140px;
+}
+
+.ds-color-info {
+  padding: var(--spacing-3);
+  text-align: center;
+}
+
+.ds-color-info strong {
+  display: block;
+  font-weight: var(--font-bold);
+  font-size: var(--text-base);
+  color: var(--color-black);
+  margin-bottom: var(--spacing-1);
+}
+
+.ds-color-info code {
+  display: block;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: var(--text-sm);
+  color: var(--color-gray-600);
+  background: var(--color-gray-50);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  margin: var(--spacing-1) auto;
+  width: fit-content;
+}
+
+.ds-color-info span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-gray-400);
+  margin-top: var(--spacing-1);
+}
+
+/* Gray scale specific styling */
+.ds-gray-scale .ds-color-swatch {
+  min-width: 120px;
+}
+
+.ds-gray-scale .ds-color-preview {
+  height: 80px;
+}
+
+.ds-gray-scale .ds-color-info code {
+  font-size: var(--text-xs);
+  font-weight: var(--font-bold);
+}
+
+.ds-gray-scale .ds-color-info span {
+  font-size: 10px;
+}
+
+/* ===================================================================
+   SPACING DEMO
+   =================================================================== */
+
+.ds-spacing-demo {
+  padding: var(--spacing-4) 0;
+}
+
+.ds-spacing-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin: var(--spacing-2) 0;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-base);
+}
+
+.ds-spacing-item:hover {
+  background: var(--color-gray-50);
+}
+
+.ds-spacing-bar {
+  height: 32px;
+  background: var(--color-accent);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+}
+
+.ds-spacing-item:hover .ds-spacing-bar {
+  background: var(--color-accent-light);
+  transform: scaleY(1.2);
+}
+
+.ds-spacing-item span {
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: var(--text-sm);
+  color: var(--color-gray-600);
+  font-weight: var(--font-medium);
+}
+
+/* ===================================================================
+   BUTTON DEMOS
+   =================================================================== */
+
+.ds-button-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  align-items: center;
+  padding: var(--spacing-4);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-3) 0;
+}
+
+/* Preview states (non-interactive) */
+.hover-state {
+  background-color: var(--color-black) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-button);
+}
+
+.active-state {
+  background-color: var(--color-black) !important;
+  transform: translateY(0);
+}
+
+/* ===================================================================
+   FORM DEMOS
+   =================================================================== */
+
+.ds-form-demo {
+  max-width: 600px;
+  padding: var(--spacing-4);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.ds-form-group {
+  margin-bottom: var(--spacing-4);
+}
+
+.ds-form-group label {
+  display: block;
+  margin-bottom: var(--spacing-1);
+  font-weight: var(--font-medium);
+  color: var(--color-gray-700);
+}
+
+.ds-form-group input,
+.ds-form-group select,
+.ds-form-group textarea {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  transition: all var(--transition-base);
+}
+
+.ds-form-group input:focus,
+.ds-form-group select:focus,
+.ds-form-group textarea:focus {
+  border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(95, 223, 129, 0.1);
+}
+
+/* ===================================================================
+   BREAKPOINT DEMO
+   =================================================================== */
+
+.ds-breakpoint-demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-4);
+  margin: var(--spacing-4) 0;
+}
+
+.ds-breakpoint-item {
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.ds-breakpoint-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.ds-breakpoint-label {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--spacing-2);
+}
+
+.ds-breakpoint-range {
+  font-weight: var(--font-bold);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-1);
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.ds-breakpoint-desc {
+  font-size: var(--text-sm);
+  color: var(--color-gray-700);
+  font-weight: var(--font-medium);
+}
+
+/* ===================================================================
+   CODE SECTION
+   =================================================================== */
+
+.ds-code-section pre {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+  overflow-x: auto;
+}
+
+.ds-code-section code {
+  color: var(--color-accent-light);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+/* ===================================================================
+   NOTES & HELPERS
+   =================================================================== */
+
+.ds-note {
+  background: var(--color-mint);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  color: var(--color-gray-700);
+  margin: var(--spacing-4) 0;
+}
+
+.ds-note::before {
+  font-weight: var(--font-bold);
+  margin-right: var(--spacing-1);
+}
+
+/* ===================================================================
+   RESPONSIVE ADJUSTMENTS
+   =================================================================== */
+
+@media (max-width: 768px) {
+  .ds-hero {
+    padding: var(--spacing-8) var(--spacing-4) !important;
+  }
+
+  .ds-section {
+    padding: var(--spacing-8) var(--spacing-4);
+  }
+
+  .ds-section-title {
+    font-size: var(--text-5xl);
+  }
+
+  .ds-showcase-box {
+    padding: var(--spacing-4);
+  }
+
+  .ds-toc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-color-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-2);
+  }
+
+  .ds-button-demo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ds-button-demo button,
+  .ds-button-demo .wp-block-button {
+    width: 100%;
+  }
+
+  .ds-form-demo {
+    padding: var(--spacing-3);
+  }
+
+  .ds-breakpoint-demo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ds-hero h1 {
+    font-size: var(--text-6xl) !important;
+  }
+
+  .ds-section-title {
+    font-size: var(--text-4xl);
+  }
+
+  .ds-font-sample {
+    font-size: var(--text-lg);
+  }
+
+  .ds-color-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-spacing-demo {
+    overflow-x: auto;
+  }
+}
+
+/* ===================================================================
+   PRINT STYLES
+   =================================================================== */
+
+@media print {
+  .ds-hero {
+    background: var(--color-white) !important;
+    color: var(--color-black) !important;
+  }
+
+  .ds-showcase-box {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .ds-button-demo button:hover,
+  .ds-color-swatch:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* ===================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   =================================================================== */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .ds-showcase-box {
+    border-width: 2px;
+  }
+
+  .ds-color-swatch {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .ds-color-swatch:hover,
+  .ds-breakpoint-item:hover,
+  .ds-spacing-item:hover .ds-spacing-bar {
+    transform: none;
+  }
+}
+
+/* Focus visible for keyboard navigation */
+.ds-toc-list a:focus-visible,
+.ds-color-swatch:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ===================================================================
+   INTERACTIVE ENHANCEMENTS
+   =================================================================== */
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Copy code button area (for future enhancement) */
+.ds-code-section pre {
+  position: relative;
+}
+
+/* Sticky section navigation (optional enhancement) */
+@media (min-width: 1024px) {
+  .ds-toc {
+    position: sticky;
+    top: 100px;
+    z-index: var(--z-sticky);
+  }
+}

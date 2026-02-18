@@ -1,0 +1,141 @@
+/**
+ * FlexIQ Design System - Font Loading
+ * Version: 1.0
+ * 
+ * Satoshi font family @font-face declarations.
+ * 
+ * FONT INSTALLATION:
+ * Place Satoshi font files in: /themes/flexiq/assets/fonts/
+ * 
+ * Required files:
+ * - Satoshi-Regular.woff2
+ * - Satoshi-Regular.woff
+ * - Satoshi-Medium.woff2
+ * - Satoshi-Medium.woff
+ * - Satoshi-Bold.woff2
+ * - Satoshi-Bold.woff
+ * - Satoshi-Black.woff2
+ * - Satoshi-Black.woff
+ * 
+ * If Satoshi fonts are not available, the fallback sans-serif stack
+ * will be used: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+ */
+
+/* ===================================================================
+   SATOSHI FONT FAMILY
+   =================================================================== */
+
+/* Satoshi Regular (400) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Medium (500) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('../fonts/Satoshi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Bold (700) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi Black (900) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+       url('../fonts/Satoshi-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===================================================================
+   FONT LOADING STRATEGY
+   =================================================================== */
+
+/**
+ * Using font-display: swap for better perceived performance:
+ * - Text is immediately visible using fallback font
+ * - Custom font swaps in when loaded (may cause layout shift)
+ * - Better than blocking text rendering
+ * 
+ * Alternative strategies:
+ * - font-display: block  -> Waits for font, blank text (FOIT)
+ * - font-display: optional -> Uses fallback if font not cached
+ */
+
+/* ===================================================================
+   FONT PRELOADING (Add to <head> in theme)
+   =================================================================== */
+
+/**
+ * For better performance, preload the most critical fonts in your theme's header:
+ * 
+ * <link rel="preload" 
+ *       href="<?php echo get_template_directory_uri(); ?>/assets/fonts/Satoshi-Bold.woff2" 
+ *       as="font" 
+ *       type="font/woff2" 
+ *       crossorigin>
+ * 
+ * <link rel="preload" 
+ *       href="<?php echo get_template_directory_uri(); ?>/assets/fonts/Satoshi-Medium.woff2" 
+ *       as="font" 
+ *       type="font/woff2" 
+ *       crossorigin>
+ */
+
+/* ===================================================================
+   FALLBACK FONT STACK
+   =================================================================== */
+
+/**
+ * The design system includes a carefully chosen fallback stack:
+ * 
+ * --font-primary: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ * 
+ * Fallback fonts:
+ * - -apple-system: San Francisco (macOS/iOS)
+ * - BlinkMacSystemFont: San Francisco (older macOS)
+ * - Segoe UI: Windows system font
+ * - sans-serif: Generic fallback
+ * 
+ * These provide excellent readability and similar proportions to Satoshi
+ * if the custom font fails to load.
+ */
+
+/* ===================================================================
+   GOOGLE FONTS ALTERNATIVE (if self-hosting is not possible)
+   =================================================================== */
+
+/**
+ * If you cannot self-host Satoshi, you can use a similar Google Font.
+ * 
+ * Recommended alternatives:
+ * 1. Inter (closest match to Satoshi)
+ * 2. DM Sans (similar geometric style)
+ * 3. Outfit (rounded geometric)
+ * 
+ * Add to theme <head>:
+ * <link rel="preconnect" href="https://fonts.googleapis.com">
+ * <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ * <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+ * 
+ * Then update --font-primary in design-system.css:
+ * --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ */

@@ -1,0 +1,681 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"design-system-page","layout":{"type":"constrained"}} -->
+<main class="wp-block-group design-system-page">
+    <!-- wp:group {"className":"ds-hero","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"primary","textColor":"white"} -->
+    <div class="wp-block-group ds-hero has-primary-background-color has-white-color has-text-color has-background" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"textAlign":"center","level":1,"fontSize":"8xl"} -->
+        <h1 class="wp-block-heading has-text-align-center has-8-xl-font-size">FlexIQ Design System</h1>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"align":"center","fontSize":"xl"} -->
+        <p class="has-text-align-center has-xl-font-size">A comprehensive guide to FlexIQ's design tokens, components, and patterns</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"align":"center","className":"ds-version"} -->
+        <p class="has-text-align-center ds-version">Version 1.0 | Last Updated: February 2026</p>
+        <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"ds-section ds-toc","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}}} -->
+    <div class="wp-block-group ds-section ds-toc" style="padding-top:3rem;padding-bottom:3rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Table of Contents</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:list {"className":"ds-toc-list"} -->
+        <ul class="ds-toc-list">
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#spacing">Spacing System</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#responsive">Responsive Behavior</a></li>
+        </ul>
+        <!-- /wp:list -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Typography Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"typography","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
+    <div id="typography" class="wp-block-group ds-section" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Typography</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">FlexIQ uses Satoshi as the primary typeface with weights ranging from Regular (400) to Black (900).</p>
+        <!-- /wp:paragraph -->
+
+        <!-- Font Families -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Font Family</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"className":"ds-font-sample satoshi-regular"} -->
+            <p class="ds-font-sample satoshi-regular">Satoshi Regular (400) - The quick brown fox jumps over the lazy dog</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"className":"ds-font-sample satoshi-medium"} -->
+            <p class="ds-font-sample satoshi-medium">Satoshi Medium (500) - The quick brown fox jumps over the lazy dog</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"className":"ds-font-sample satoshi-bold"} -->
+            <p class="ds-font-sample satoshi-bold">Satoshi Bold (700) - The quick brown fox jumps over the lazy dog</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"className":"ds-font-sample satoshi-black"} -->
+            <p class="ds-font-sample satoshi-black">Satoshi Black (900) - The quick brown fox jumps over the lazy dog</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Heading Styles -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Heading Styles</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:heading {"level":1,"className":"ds-example"} -->
+            <h1 class="wp-block-heading ds-example">H1 - Hero Heading</h1>
+            <!-- /wp:heading -->
+
+            <!-- wp:heading {"level":2,"className":"ds-example"} -->
+            <h2 class="wp-block-heading ds-example">H2 - Display Heading</h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:heading {"level":3,"className":"ds-example"} -->
+            <h3 class="wp-block-heading ds-example">H3 - Section Title</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:heading {"level":4,"className":"ds-example"} -->
+            <h4 class="wp-block-heading ds-example">H4 - Subsection Header</h4>
+            <!-- /wp:heading -->
+
+            <!-- wp:heading {"level":5,"className":"ds-example"} -->
+            <h5 class="wp-block-heading ds-example">H5 - Component Title</h5>
+            <!-- /wp:heading -->
+
+            <!-- wp:heading {"level":6,"className":"ds-example"} -->
+            <h6 class="wp-block-heading ds-example">H6 - Small Heading</h6>
+            <!-- /wp:heading -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Body Text -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Body Text Sizes</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"className":"ds-text-lg"} -->
+            <p class="ds-text-lg">Large Body Text - Perfect for introductions and emphasis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"className":"ds-text-base"} -->
+            <p class="ds-text-base">Base Body Text - Standard text for main content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"className":"ds-text-sm"} -->
+            <p class="ds-text-sm">Small Body Text - Used for secondary information and captions. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Colors Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"colors","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"gray-50"} -->
+    <div id="colors" class="wp-block-group ds-section has-gray-50-background-color has-background" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Colors</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">FlexIQ's color palette is built around natural greens, neutral grays, and semantic colors for UI states.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- Primary Colors -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Primary Colors</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-color-grid"} -->
+            <div class="wp-block-group ds-color-grid">
+                <div class="ds-color-swatch" data-color="#0c2212">
+                    <div class="ds-color-preview" style="background-color: #0c2212;"></div>
+                    <div class="ds-color-info">
+                        <strong>Primary</strong>
+                        <code>#0c2212</code>
+                        <span>Dark Green</span>
+                    </div>
+                </div>
+
+                <div class="ds-color-swatch" data-color="#5fdf81">
+                    <div class="ds-color-preview" style="background-color: #5fdf81;"></div>
+                    <div class="ds-color-info">
+                        <strong>Accent</strong>
+                        <code>#5fdf81</code>
+                        <span>Bright Green</span>
+                    </div>
+                </div>
+
+                <div class="ds-color-swatch" data-color="#b0eaa9">
+                    <div class="ds-color-preview" style="background-color: #b0eaa9;"></div>
+                    <div class="ds-color-info">
+                        <strong>Accent Light</strong>
+                        <code>#b0eaa9</code>
+                        <span>Light Green</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Neutral Grays -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Neutral Grays</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-color-grid ds-gray-scale"} -->
+            <div class="wp-block-group ds-color-grid ds-gray-scale">
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #000000;"></div><code>Gray 900</code><span>#000000</span></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #171717;"></div><code>Gray 800</code><span>#171717</span></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #444444;"></div><code>Gray 500</code><span>#444444</span></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #737373;"></div><code>Gray 300</code><span>#737373</span></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #d9d9d9;"></div><code>Gray 200</code><span>#d9d9d9</span></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #f5f5f5;"></div><code>Gray 50</code><span>#f5f5f5</span></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #ffffff; border: 1px solid #e5e5e5;"></div><code>White</code><span>#ffffff</span></div>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Semantic Colors -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Semantic Colors</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-color-grid"} -->
+            <div class="wp-block-group ds-color-grid">
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #1ab682;"></div><strong>Success</strong><code>#1ab682</code></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #ef3c33;"></div><strong>Error</strong><code>#ef3c33</code></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #f1ad2b;"></div><strong>Warning</strong><code>#f1ad2b</code></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #007aeb;"></div><strong>Info</strong><code>#007aeb</code></div>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Additional Colors -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Additional Colors</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-color-grid"} -->
+            <div class="wp-block-group ds-color-grid">
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #f1e4c4;"></div><strong>Cream</strong><code>#f1e4c4</code></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #f0fff4;"></div><strong>Mint</strong><code>#f0fff4</code></div>
+                <div class="ds-color-swatch"><div class="ds-color-preview" style="background: #efb3d9;"></div><strong>Pink</strong><code>#efb3d9</code></div>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Spacing Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"spacing","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
+    <div id="spacing" class="wp-block-group ds-section" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Spacing System</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">FlexIQ uses a base-8 spacing system for consistent rhythm and alignment.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Base-8 Scale</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-spacing-demo"} -->
+            <div class="wp-block-group ds-spacing-demo">
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 8px;"></div><span>8px (spacing-1)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 16px;"></div><span>16px (spacing-2)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 24px;"></div><span>24px (spacing-3)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 32px;"></div><span>32px (spacing-4)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 48px;"></div><span>48px (spacing-6)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 64px;"></div><span>64px (spacing-8)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 96px;"></div><span>96px (spacing-12)</span></div>
+                <div class="ds-spacing-item"><div class="ds-spacing-bar" style="width: 128px;"></div><span>128px (spacing-16)</span></div>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Buttons Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"buttons","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"gray-50"} -->
+    <div id="buttons" class="wp-block-group ds-section has-gray-50-background-color has-background" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Buttons</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">FlexIQ buttons come in three variants with multiple sizes and states.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- Button Variants -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Button Variants</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-button-demo"} -->
+            <div class="wp-block-group ds-button-demo">
+                <!-- wp:buttons -->
+                <div class="wp-block-buttons">
+                    <!-- wp:button {"className":"is-style-primary"} -->
+                    <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button">Primary Button</a></div>
+                    <!-- /wp:button -->
+
+                    <!-- wp:button {"className":"is-style-secondary"} -->
+                    <div class="wp-block-button is-style-secondary"><a class="wp-block-button__link wp-element-button">Secondary Button</a></div>
+                    <!-- /wp:button -->
+
+                    <!-- wp:button {"className":"is-style-accent"} -->
+                    <div class="wp-block-button is-style-accent"><a class="wp-block-button__link wp-element-button">Accent Button</a></div>
+                    <!-- /wp:button -->
+                </div>
+                <!-- /wp:buttons -->
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Button Sizes -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Button Sizes</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-button-demo"} -->
+            <div class="wp-block-group ds-button-demo">
+                <button class="button-primary button-small">Small Button</button>
+                <button class="button-primary">Medium Button (Default)</button>
+                <button class="button-primary button-large">Large Button</button>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Button States -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Button States</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-button-demo"} -->
+            <div class="wp-block-group ds-button-demo">
+                <button class="button-primary">Default</button>
+                <button class="button-primary hover-state">Hover (Preview)</button>
+                <button class="button-primary active-state">Active (Preview)</button>
+                <button class="button-primary" disabled>Disabled</button>
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:paragraph {"className":"ds-note"} -->
+            <p class="ds-note">💡 Hover over default buttons to see the interactive hover state</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Lists Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"lists","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
+    <div id="lists" class="wp-block-group ds-section" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Lists</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">Standard and styled list examples showing typography and spacing.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:columns -->
+        <div class="wp-block-columns">
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <!-- wp:group {"className":"ds-showcase-box"} -->
+                <div class="wp-block-group ds-showcase-box">
+                    <!-- wp:heading {"level":3} -->
+                    <h3 class="wp-block-heading">Unordered List</h3>
+                    <!-- /wp:heading -->
+
+                    <!-- wp:list -->
+                    <ul>
+                        <li>First list item</li>
+                        <li>Second list item with more content to show line wrapping behavior</li>
+                        <li>Third list item</li>
+                        <li>Fourth list item</li>
+                    </ul>
+                    <!-- /wp:list -->
+                </div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:column -->
+
+            <!-- wp:column -->
+            <div class="wp-block-column">
+                <!-- wp:group {"className":"ds-showcase-box"} -->
+                <div class="wp-block-group ds-showcase-box">
+                    <!-- wp:heading {"level":3} -->
+                    <h3 class="wp-block-heading">Ordered List</h3>
+                    <!-- /wp:heading -->
+
+                    <!-- wp:list {"ordered":true} -->
+                    <ol>
+                        <li>First step in the process</li>
+                        <li>Second step with detailed instructions</li>
+                        <li>Third step</li>
+                        <li>Final step</li>
+                    </ol>
+                    <!-- /wp:list -->
+                </div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:column -->
+        </div>
+        <!-- /wp:columns -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Components Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"components","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"gray-50"} -->
+    <div id="components" class="wp-block-group ds-section has-gray-50-background-color has-background" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Components</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">Common UI components built with the FlexIQ design system.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- Cards -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Cards</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:columns -->
+            <div class="wp-block-columns">
+                <!-- wp:column -->
+                <div class="wp-block-column">
+                    <!-- wp:group {"className":"is-style-card"} -->
+                    <div class="wp-block-group is-style-card">
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="wp-block-heading">Card Title</h4>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:paragraph -->
+                        <p>This is a standard card component with shadow and hover effects. Cards are perfect for grouping related content.</p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:buttons -->
+                        <div class="wp-block-buttons">
+                            <!-- wp:button {"className":"is-style-primary"} -->
+                            <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button">Learn More</a></div>
+                            <!-- /wp:button -->
+                        </div>
+                        <!-- /wp:buttons -->
+                    </div>
+                    <!-- /wp:group -->
+                </div>
+                <!-- /wp:column -->
+
+                <!-- wp:column -->
+                <div class="wp-block-column">
+                    <!-- wp:group {"className":"is-style-card"} -->
+                    <div class="wp-block-group is-style-card">
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="wp-block-heading">Another Card</h4>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:paragraph -->
+                        <p>Hover over cards to see the elevation effect. They lift slightly and cast a larger shadow.</p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:buttons -->
+                        <div class="wp-block-buttons">
+                            <!-- wp:button {"className":"is-style-accent"} -->
+                            <div class="wp-block-button is-style-accent"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
+                            <!-- /wp:button -->
+                        </div>
+                        <!-- /wp:buttons -->
+                    </div>
+                    <!-- /wp:group -->
+                </div>
+                <!-- /wp:column -->
+
+                <!-- wp:column -->
+                <div class="wp-block-column">
+                    <!-- wp:group {"className":"is-style-card"} -->
+                    <div class="wp-block-group is-style-card">
+                        <!-- wp:heading {"level":4} -->
+                        <h4 class="wp-block-heading">Third Card</h4>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:paragraph -->
+                        <p>Cards maintain consistent spacing and typography throughout the design system.</p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:buttons -->
+                        <div class="wp-block-buttons">
+                            <!-- wp:button {"className":"is-style-secondary"} -->
+                            <div class="wp-block-button is-style-secondary"><a class="wp-block-button__link wp-element-button">Explore</a></div>
+                            <!-- /wp:button -->
+                        </div>
+                        <!-- /wp:buttons -->
+                    </div>
+                    <!-- /wp:group -->
+                </div>
+                <!-- /wp:column -->
+            </div>
+            <!-- /wp:columns -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Forms -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Form Elements</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-form-demo"} -->
+            <div class="wp-block-group ds-form-demo">
+                <div class="ds-form-group">
+                    <label for="demo-text">Text Input</label>
+                    <input type="text" id="demo-text" placeholder="Enter text here">
+                </div>
+
+                <div class="ds-form-group">
+                    <label for="demo-email">Email Input</label>
+                    <input type="email" id="demo-email" placeholder="your@email.com">
+                </div>
+
+                <div class="ds-form-group">
+                    <label for="demo-select">Select Dropdown</label>
+                    <select id="demo-select">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+
+                <div class="ds-form-group">
+                    <label for="demo-textarea">Textarea</label>
+                    <textarea id="demo-textarea" rows="4" placeholder="Enter your message..."></textarea>
+                </div>
+
+                <button class="button-primary">Submit Form</button>
+            </div>
+            <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Responsive Section -->
+    <!-- wp:group {"className":"ds-section","anchor":"responsive","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
+    <div id="responsive" class="wp-block-group ds-section" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Responsive Behavior</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"className":"ds-intro"} -->
+        <p class="ds-intro">FlexIQ is mobile-first with breakpoints at 768px (tablet) and 1024px (desktop).</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Breakpoints</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:group {"className":"ds-breakpoint-demo"} -->
+            <div class="wp-block-group ds-breakpoint-demo">
+                <div class="ds-breakpoint-item">
+                    <div class="ds-breakpoint-label">📱 Mobile</div>
+                    <div class="ds-breakpoint-range">320px - 767px</div>
+                    <div class="ds-breakpoint-desc">Single column, reduced spacing</div>
+                </div>
+
+                <div class="ds-breakpoint-item">
+                    <div class="ds-breakpoint-label">💻 Tablet</div>
+                    <div class="ds-breakpoint-range">768px - 1023px</div>
+                    <div class="ds-breakpoint-desc">Two columns, moderate spacing</div>
+                </div>
+
+                <div class="ds-breakpoint-item">
+                    <div class="ds-breakpoint-label">🖥️ Desktop</div>
+                    <div class="ds-breakpoint-range">1024px+</div>
+                    <div class="ds-breakpoint-desc">Multi-column, full spacing</div>
+                </div>
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:paragraph {"className":"ds-note"} -->
+            <p class="ds-note">💡 Resize your browser window to see responsive typography in action using fluid clamp() values</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Responsive Typography -->
+        <!-- wp:group {"className":"ds-showcase-box"} -->
+        <div class="wp-block-group ds-showcase-box">
+            <!-- wp:heading {"level":3} -->
+            <h3 class="wp-block-heading">Responsive Typography</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph -->
+            <p>Font sizes scale fluidly using CSS clamp() for optimal readability across all devices. Headings adjust proportionally while maintaining hierarchy.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:heading {"level":1,"className":"ds-responsive-demo"} -->
+            <h1 class="wp-block-heading ds-responsive-demo">This heading scales responsively</h1>
+            <!-- /wp:heading -->
+        </div>
+        <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Code Snippets Section -->
+    <!-- wp:group {"className":"ds-section ds-code-section","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"primary","textColor":"white"} -->
+    <div class="wp-block-group ds-section ds-code-section has-primary-background-color has-white-color has-text-color has-background" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"level":2,"className":"ds-section-title"} -->
+        <h2 class="wp-block-heading ds-section-title">Using the Design System</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p>All design tokens are available as CSS custom properties. Reference them in your styles:</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:code -->
+        <pre class="wp-block-code"><code>/* Using color tokens */
+.my-element {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Using spacing */
+.my-section {
+  padding: var(--spacing-6);
+  gap: var(--spacing-4);
+}
+
+/* Using typography */
+.my-heading {
+  font-family: var(--font-primary);
+  font-size: var(--text-h3);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tighter);
+}</code></pre>
+        <!-- /wp:code -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Footer CTA -->
+    <!-- wp:group {"className":"ds-section ds-footer-cta","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"cream"} -->
+    <div class="wp-block-group ds-section ds-footer-cta has-cream-background-color has-background" style="padding-top:4rem;padding-bottom:4rem">
+        <!-- wp:heading {"textAlign":"center","level":2} -->
+        <h2 class="wp-block-heading has-text-align-center">Ready to build with FlexIQ?</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"align":"center"} -->
+        <p class="has-text-align-center">Use these components and tokens to create consistent, beautiful interfaces.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+        <div class="wp-block-buttons">
+            <!-- wp:button {"className":"is-style-primary"} -->
+            <div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button">View on Figma</a></div>
+            <!-- /wp:button -->
+
+            <!-- wp:button {"className":"is-style-accent"} -->
+            <div class="wp-block-button is-style-accent"><a class="wp-block-button__link wp-element-button">Download Assets</a></div>
+            <!-- /wp:button -->
+        </div>
+        <!-- /wp:buttons -->
+    </div>
+    <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
