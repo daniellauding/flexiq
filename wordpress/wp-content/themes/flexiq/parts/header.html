@@ -1,45 +1,33 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"}},"border":{"bottom":{"color":"#e5e7eb","width":"1px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-background-color has-background" style="padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid #e5e7eb;">
-    <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group alignwide">
+<!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"}},"border":{"bottom":{"color":"#e5e7eb","width":"1px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<header class="wp-block-group has-white-background-color has-background" style="padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid #e5e7eb;">
+
+    <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+    <div class="wp-block-group alignwide" style="align-items:center;">
 
         <!-- Logo -->
-        <!-- wp:site-title {"level":0,"style":{"typography":{"fontSize":"22px","fontWeight":"900","letterSpacing":"-0.02em"},"color":{"text":"#0c2212"}}} /-->
+        <!-- wp:site-title {"level":0,"style":{"typography":{"fontSize":"22px","fontWeight":"900","letterSpacing":"-0.02em"},"color":{"text":"#0c2212"},"elements":{"link":{"color":{"text":"#0c2212"}}}}} /-->
 
-        <!-- Nav links + CTA -->
-        <!-- wp:group {"layout":{"type":"flex","justifyContent":"flex-end","flexWrap":"nowrap","columnGap":"2rem"}} -->
-        <div class="wp-block-group">
+        <!-- Nav + CTA -->
+        <!-- wp:group {"className":"flexiq-nav-wrapper","layout":{"type":"flex","justifyContent":"flex-end","flexWrap":"nowrap","verticalAlignment":"center","columnGap":"2rem"}} -->
+        <div class="wp-block-group flexiq-nav-wrapper">
 
-            <!-- Nav items -->
-            <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.05em"},"color":{"text":"#0c2212"}}} -->
-            <p class="has-text-color" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;"><a href="/" style="color:#0c2212;text-decoration:none;">Hem</a></p>
-            <!-- /wp:paragraph -->
+            <!-- wp:navigation {"overlayMenu":"mobile","openSubmenusOnClick":false,"showSubmenuIcon":false,"layout":{"type":"flex","justifyContent":"flex-end","flexWrap":"nowrap","columnGap":"2rem"},"style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.05em"},"typography":{"fontSize":"14px"}},"textColor":"contrast","className":"flexiq-nav"} -->
 
-            <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.05em"},"color":{"text":"#0c2212"}}} -->
-            <p class="has-text-color" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;"><a href="/for-foretag" style="color:#0c2212;text-decoration:none;">För företag</a></p>
-            <!-- /wp:paragraph -->
+                <!-- wp:navigation-link {"label":"Hem","url":"/","kind":"custom","isTopLevelLink":true} /-->
+                <!-- wp:navigation-link {"label":"För Företag","url":"/for-foretag","kind":"custom","isTopLevelLink":true} /-->
+                <!-- wp:navigation-link {"label":"Om Oss","url":"/om-oss","kind":"custom","isTopLevelLink":true} /-->
+                <!-- wp:navigation-link {"label":"Din Karriär","url":"/din-karriar","kind":"custom","isTopLevelLink":true} /-->
+                <!-- wp:navigation-link {"label":"Artiklar","url":"/artiklar","kind":"custom","isTopLevelLink":true} /-->
 
-            <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.05em"},"color":{"text":"#0c2212"}}} -->
-            <p class="has-text-color" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;"><a href="/om-oss" style="color:#0c2212;text-decoration:none;">Om oss</a></p>
-            <!-- /wp:paragraph -->
+                <!-- wp:navigation-link {"label":"Kontakta oss","url":"/kontakt","kind":"custom","isTopLevelLink":true,"className":"flexiq-nav-cta"} /-->
 
-            <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.05em"},"color":{"text":"#0c2212"}}} -->
-            <p class="has-text-color" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;"><a href="/din-karriar" style="color:#0c2212;text-decoration:none;">Din karriär</a></p>
-            <!-- /wp:paragraph -->
-
-            <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700","textTransform":"uppercase","letterSpacing":"0.05em"},"color":{"text":"#0c2212"}}} -->
-            <p class="has-text-color" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;"><a href="/artiklar" style="color:#0c2212;text-decoration:none;">Artiklar</a></p>
-            <!-- /wp:paragraph -->
-
-            <!-- Green CTA button -->
-            <!-- wp:button {"style":{"color":{"background":"#5fdf81","text":"#0c2212"},"border":{"radius":"9999px"},"spacing":{"padding":{"top":"10px","bottom":"10px","left":"20px","right":"20px"}},"typography":{"fontSize":"14px","fontWeight":"700"}}} -->
-            <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" href="/kontakt" style="background-color:#5fdf81;color:#0c2212;border-radius:9999px;padding:10px 20px;font-size:14px;font-weight:700;text-decoration:none;">Kontakta oss</a></div>
-            <!-- /wp:button -->
+            <!-- /wp:navigation -->
 
         </div>
         <!-- /wp:group -->
 
     </div>
     <!-- /wp:group -->
-</div>
+
+</header>
 <!-- /wp:group -->

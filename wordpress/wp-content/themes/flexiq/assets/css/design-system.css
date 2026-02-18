@@ -625,3 +625,138 @@
   opacity: 0.85 !important;
   mix-blend-mode: normal !important;
 }
+
+/* ============================================================
+   RESPONSIVE NAV — Mobile / Tablet / Desktop
+   ============================================================ */
+
+/* --- Nav link base styles --- */
+.flexiq-nav .wp-block-navigation-item__content,
+.flexiq-nav .wp-block-navigation a {
+  color: #0c2212 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  text-decoration: none !important;
+  transition: opacity 0.15s ease;
+}
+.flexiq-nav .wp-block-navigation-item__content:hover,
+.flexiq-nav .wp-block-navigation a:hover {
+  opacity: 0.7;
+}
+
+/* --- CTA nav link styled as green pill button --- */
+.flexiq-nav .wp-block-navigation-item.flexiq-nav-cta > .wp-block-navigation-item__content,
+.flexiq-nav a.flexiq-nav-cta {
+  background: #5fdf81 !important;
+  color: #0c2212 !important;
+  border-radius: 9999px !important;
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+/* Target the link inside the nav-cta item */
+.wp-block-navigation .flexiq-nav-cta .wp-block-navigation-item__content {
+  background: #5fdf81 !important;
+  color: #0c2212 !important;
+  border-radius: 9999px !important;
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+/* --- Hamburger button styling --- */
+.wp-block-navigation__responsive-container-open,
+.wp-block-navigation__responsive-container-close {
+  color: #0c2212 !important;
+}
+.wp-block-navigation__responsive-container-open svg,
+.wp-block-navigation__responsive-container-close svg {
+  fill: #0c2212 !important;
+}
+
+/* --- Mobile overlay menu --- */
+.wp-block-navigation__responsive-container.is-menu-open {
+  background-color: #ffffff !important;
+  padding: 2rem !important;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+  color: #0c2212 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  padding: 12px 0 !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+.wp-block-navigation__responsive-container.is-menu-open .flexiq-nav-cta .wp-block-navigation-item__content {
+  background: #5fdf81 !important;
+  border-radius: 9999px !important;
+  padding: 12px 20px !important;
+  border-bottom: none !important;
+  text-align: center !important;
+  margin-top: 16px !important;
+  display: block !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* Tablet (768px–1024px) */
+@media (max-width: 1024px) {
+  .flexiq-nav .wp-block-navigation-item__content,
+  .flexiq-nav .wp-block-navigation a {
+    font-size: 12px !important;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  /* Header inner — logo + hamburger only */
+  .flexiq-nav-wrapper {
+    gap: 0 !important;
+  }
+
+  /* Footer columns stack */
+  .wp-block-columns {
+    flex-direction: column !important;
+  }
+  .wp-block-column {
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Hero text */
+  .wp-block-group .has-text-color[style*="font-size:64px"],
+  .wp-block-group .has-text-color[style*="font-size:56px"] {
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Section padding */
+  .wp-block-group[style*="padding-top:80px"] {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  /* Cards: single column */
+  .wp-block-columns.are-vertically-aligned-top {
+    flex-direction: column !important;
+  }
+}
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+  .wp-site-blocks {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
