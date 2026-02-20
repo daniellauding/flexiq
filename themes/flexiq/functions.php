@@ -69,27 +69,35 @@ add_action( 'init', 'flexiq_load_patterns' );
  * Enqueue theme styles
  */
 function flexiq_enqueue_styles() {
-    wp_enqueue_style( 'flexiq-style', get_stylesheet_uri(), array(), '1.0.0' );
+    wp_enqueue_style( 'flexiq-style', get_stylesheet_uri(), array(), '1.0.2' );
     
     wp_enqueue_style( 
         'flexiq-design-system', 
         get_template_directory_uri() . '/assets/css/design-system.css', 
         array(), 
-        '1.0.0' 
+        '1.0.2' 
+    );
+    
+    // Component styles (loaded after design-system for proper cascade)
+    wp_enqueue_style( 
+        'flexiq-header', 
+        get_template_directory_uri() . '/assets/css/components/header.css', 
+        array( 'flexiq-design-system' ), 
+        '1.0.2' 
     );
     
     wp_enqueue_style( 
-        'flexiq-components', 
-        get_template_directory_uri() . '/assets/css/components.css', 
+        'flexiq-footer', 
+        get_template_directory_uri() . '/assets/css/components/footer.css', 
         array( 'flexiq-design-system' ), 
-        '1.0.0' 
+        '1.0.2' 
     );
     
     wp_enqueue_style( 
         'flexiq-fonts', 
         get_template_directory_uri() . '/assets/css/fonts.css', 
         array(), 
-        '1.0.0' 
+        '1.0.2' 
     );
 }
 add_action( 'wp_enqueue_scripts', 'flexiq_enqueue_styles' );
@@ -101,7 +109,8 @@ function flexiq_theme_setup() {
     add_theme_support( 'editor-styles' );
     add_editor_style( 'style.css' );
     add_editor_style( 'assets/css/design-system.css' );
-    add_editor_style( 'assets/css/components.css' );
+    add_editor_style( 'assets/css/components/header.css' );
+    add_editor_style( 'assets/css/components/footer.css' );
     add_editor_style( 'assets/css/fonts.css' );
 }
 add_action( 'after_setup_theme', 'flexiq_theme_setup' );

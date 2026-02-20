@@ -1,12 +1,10 @@
 /**
  * FlexIQ Design System - CSS Custom Properties
  * Version: 2.0 — EXACT Figma tokens
- * Updated: 2026-02-18
+ * Updated: 2026-02-19
+ * 
+ * Component styles (header, footer) loaded separately via functions.php
  */
-
-/* Component-specific styles */
-@import url('components/header.css');
-@import url('components/footer.css');
 
 :root {
   /* === FIGMA EXACT COLORS === */
