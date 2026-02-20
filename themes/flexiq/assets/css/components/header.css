@@ -1,0 +1,43 @@
+/**
+ * Header Component Styles
+ * FlexIQ Theme
+ */
+
+/* Sticky header */
+.wp-block-template-part[data-area="header"] {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Header wrapper */
+header.wp-block-group {
+  padding: var(--spacing-3) var(--section-padding-x);
+}
+
+/* Navigation */
+nav.wp-block-navigation {
+  gap: var(--spacing-6);
+}
+
+/* Kontakta oss button (green pill) */
+.wp-block-navigation .wp-block-button.kontakta-oss-button .wp-block-button__link {
+  background-color: var(--color-accent);
+  color: var(--color-dark-green);
+  border-radius: 100px;
+  padding: var(--spacing-2) var(--spacing-4);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+
+.wp-block-navigation .wp-block-button.kontakta-oss-button .wp-block-button__link:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Mobile menu toggle */
+.wp-block-navigation__responsive-container-open {
+  padding: var(--spacing-2);
+}

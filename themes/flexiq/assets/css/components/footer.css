@@ -1,0 +1,49 @@
+/**
+ * Footer Component Styles
+ * FlexIQ Theme
+ */
+
+/* Footer — white background, minimal padding */
+.wp-block-template-part[data-area="footer"],
+footer,
+.site-footer {
+  background-color: var(--color-white); /* WHITE footer confirmed from Figma */
+  color: var(--color-dark-green);
+  padding: 0; /* No extra padding — footer content handles its own spacing */
+}
+
+/* Footer inner wrapper (if exists in template) */
+footer.wp-block-group {
+  padding: var(--spacing-8) var(--section-padding-x) var(--spacing-4);
+}
+
+/* Footer navigation links */
+footer .wp-block-navigation__container a {
+  color: var(--color-dark-green);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+}
+
+footer .wp-block-navigation__container a:hover {
+  color: var(--color-primary);
+}
+
+/* Footer illustration (dark green SVG, large, bleeds out at bottom) */
+.footer-illustration {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-illustration svg,
+.footer-illustration img {
+  max-width: none;
+  width: 120%;
+  margin-left: -10%;
+  color: var(--color-dark-green);
+}
+
+/* Footer text (muted gray for secondary info) */
+footer .wp-block-paragraph.muted {
+  color: #4a4a4a;
+  font-size: var(--font-size-sm);
+}

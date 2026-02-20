@@ -4,6 +4,10 @@
  * Updated: 2026-02-18
  */
 
+/* Component-specific styles */
+@import url('components/header.css');
+@import url('components/footer.css');
+
 :root {
   /* === FIGMA EXACT COLORS === */
   --color-primary: #0c2212;
